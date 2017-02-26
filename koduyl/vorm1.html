@@ -3,16 +3,26 @@
 <html> 
 	<head> 
 		<meta charset="utf-8"/>
-		<title> Teine kodutöö </title>
+		<title> GET meetod </title>
 	</head>
-	<body> 
-	<form action="data.php" method="GET">
-	<input type="text" name="andmed" placeholder="andmete sisestamiseks" value="miskit" size="10" maxlength="10">
-	<input type="checkbox" name="lisand" value="juust" checked>
-	<input type="chekcbox" name="lisand" value="vorst">
-	<input type="radio" name="sugu" value="mees">
-	<input type="radio" name="sugu" value="naine">
-	<button type="submit"> Saada </button>
+	<body>
+		<form action="vormid1.html" method="get">
+	<h3> Taimede tellimisvorm </h3>
+	Tellija eesnimi: 
+	<br><input type="text" name="eesnimi" value="nt Mari" placeholder="eesnimi"><br>
+	Tellija perekonnanimi: 
+	<br><input type="text" name="perekonnanimi" value="nt Tamm" placeholder="perekonnanimi"><br>
+	Tellija telefoninumber:
+	<br><input type="tel" name="tefoninumber" value="nt 987 7778"<br>
+	Tellija vanus: 
+	<br><input type="number" name="vanus" min="0" max="99" placeholder="vanus"> <br>
+	Kui rahul olete meie teenustega skaala 0 kuni 10 (0-täielik rahulolematus, 10-ülim rahulolu)?
+	<br>0<input type="range" name="rahulolu" min="0" max="10" value="1">10<br>
+	Kas soovite uudiseid sms-ga saada?
+	<input type="radio"  name="teated" value="jah" checked> JAH
+	<input type="radio"  name="teated" value="ei" > EI
+	Kuidas <br>
+	<br><button type="submit"> Saada </button><br>
 	</form>
 	
 	<p>
