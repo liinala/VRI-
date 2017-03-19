@@ -93,15 +93,18 @@
 		</div>
 	
 		<script type="text/javascript">
-		
-		window.onload = function() {
-		}
-		alert("Hakka märklauda sikutama!");
-		document.getElementById("marklaud").addEventListener("click", function() {marklaud.style.left=(Math.random()*(window.innerWidth-200)) + "px";
-		marklaud.style.top=(Math.random()*(window.innerHeight-200)) + "px"});
-		
-		</script>
+		alert("Hakka märklauda klikkima!")
+		window.onload = function(){
+		 
 	
+	
+		document.getElementById("marklaud").addEventListener("click", function()
+		{
+		
+		marklaud.style.left=(Math.random()*600) + "px";
+		marklaud.style.top=(Math.random()*200) + "px"});
+		}
+		</script>
 	
 	
 	
@@ -114,3 +117,7 @@
 	</body>
 
 </html>
+
+<!-- /*document.getElementById("myBtn").addEventListener("click", function(){
+    document.getElementById("demo").innerHTML = "Hello World";
+});*/ -->
