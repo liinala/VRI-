@@ -6,9 +6,33 @@
 	<style type="text/css">
 	.active { background: skyblue; padding: 10px;}
 	</style>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript">
+		$(document).ready(function() {
+		var blue = $("li").first();
+			blue.addClass("active");
 
+			
+
+			$("button").click(function() {
+				
+				blue.removeClass("active"); 
+				if($(this).html() == "tagasi") {
+					if (blue.is(":first-child")){
+						blue = $("li").last();
+					} else {
+						blue = blue.prev();
+					}
+				} else {
+					if (blue.is(":last-child")){
+						blue = $("li").first();
+					} else {
+						blue = blue.next();
+					}
+				}
+				blue.addClass("active"); 
+			});
+		});
 
 
 
