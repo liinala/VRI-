@@ -1,0 +1,32 @@
+Ülesande tekst:
+Luua uus tabel 'loomaaed', kus on järgnevad väljad:
+id - täisarv, automaatselt suurenev primaarvõti
+nimi - tekstiline väärtus
+vanus - täisarv
+liik - tesktiline väärtus
+puur - täisarv
+Täita eelnevalt loodud tabel vähemalt 5 reaga. 
+Sisestamisel valida andmed nii, et mõned loomad jagavad samat puuri ja mõnest liigist on mitu looma.
+
+Tabeli "loomaaed_llaumets" loomine koos etteantud väljadega:
+CREATE TABLE loomaaed_llaumets (id integer PRIMARY KEY auto_increment, nimi varchar(50), vanus integer, liik varchar(50), puur integer)
+
+Andmete sisetamine tabelisse: 
+INSERT INTO loomaaed_llaumets (nimi, vanus, liik, puur) VALUES ('Pontu', 4, 'koer', 1), ('Mons', 5, 'kass', 4), ('Kaspar', 15, 'koer', 2), ('Trix', 1, 'rott', 3), ('Traks', 2, 'hamster', 3);
+
+Päringute koostamine. Koostada järgnevad päringud:
+
+Hankida kõigi mingis ühes kindlas puuris elavate loomade nimi ja puuri number
+SELECT nimi, puur FROM loomaaed_llaumets WHERE puur=3	
+
+
+Hankida vanima ja noorima looma vanused
+SELECT MIN(vanus), MAX(vanus) FROM loomaaed_llaumets;
+
+
+Hankida puuri number koos selles elavate loomade arvuga (vihjeks: group by ja count)
+SELECT puur, COUNT(*) FROM loomaaed_llaumets GROUP BY puur;
+
+
+Suurendada kõiki tabelis olevaid vanuseid 1 aasta võrra
+UPDATE loomaaed_llaumets SET vanus=vanus+1;
