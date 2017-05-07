@@ -1,12 +1,4 @@
-‹lesande tekst:
-Luua uus tabel 'loomaaed', kus on j‰rgnevad v‰ljad:
-id - t‰isarv, automaatselt suurenev primaarvıti
-nimi - tekstiline v‰‰rtus
-vanus - t‰isarv
-liik - tesktiline v‰‰rtus
-puur - t‰isarv
-T‰ita eelnevalt loodud tabel v‰hemalt 5 reaga. 
-Sisestamisel valida andmed nii, et mıned loomad jagavad samat puuri ja mınest liigist on mitu looma.
+
 
 Tabeli "loomaaed_llaumets" loomine koos etteantud v‰ljadega:
 CREATE TABLE loomaaed_llaumets (id integer PRIMARY KEY auto_increment, nimi varchar(50), vanus integer, liik varchar(50), puur integer)
@@ -27,6 +19,7 @@ SELECT MIN(vanus), MAX(vanus) FROM loomaaed_llaumets;
 Hankida puuri number koos selles elavate loomade arvuga (vihjeks: group by ja count)
 SELECT puur, COUNT(*) FROM loomaaed_llaumets GROUP BY puur;
 
+Tabeli muutmine:
 
 Suurendada kıiki tabelis olevaid vanuseid 1 aasta vırra
 UPDATE loomaaed_llaumets SET vanus=vanus+1;
