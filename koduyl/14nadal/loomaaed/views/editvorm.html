@@ -1,0 +1,17 @@
+<!--Teha koopia loomavorm.html-ist ja nimetada see editvorm.html -iks
+    muuta ära action, page=muuda
+    lisada peidetud väli looma id hoidmiseks
+    muuta submit nupu tekst 'muuda'-ks
+-->
+<form action="?page=muuda" method="POST" enctype="multipart/form-data">
+	 <input type="hidden" name="muuda" value="<?php echo $loom['id']; ?>"><br>
+	<input type="text" name="nimi" placeholder="nimi" value="<?php if (isset($loom['nimi'])) echo htmlspecialchars($loom['nimi']); ?>"/><br/>
+	<input type="number" name="puur" placeholder="puur" value="<?php if (isset($loom['puur'])) echo htmlspecialchars($loom['puur']); ?>"/><br/>
+	Näopilt: <input type="file" name="liik"/><br/>
+	<input type="submit" value="Muuda"/> 
+</form>
+<?php if (isset($errors)):?>
+		<?php foreach($errors as $error):?>
+			<div style="color:red;"><?php echo htmlspecialchars($error); ?></div>
+		<?php endforeach;?>
+	<?php endif;?>

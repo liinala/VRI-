@@ -22,6 +22,7 @@ function logi(){
 		  	
 		  	//Kui meetodiks oli POST, kontrollida kas vormiväljad olid täidetud. Vastavalt vajadusele tekitada veateateid (massiiv $errors)
 		  	$errors = array();
+		
 		  	if (empty($_POST['user']) || empty($_POST['pass'])) {
 		  		if(empty($_POST['user'])) {
 			    	$errors[] = "kasutajanimi on puudu";
@@ -105,7 +106,7 @@ function lisa(){
 	  		global $connection;
 	  		$loomanimi = mysqli_real_escape_string($connection, $_POST["nimi"]);
 	  		$puurinr = mysqli_real_escape_string($connection, $_POST["puur"]);
-			$query = "INSERT INTO eprangel_loomaaed (nimi, liik, puur) VALUES ('$loomanimi', '$pilt', '$puurinr')";
+			$query = "INSERT INTO llaumets_loomaaed (nimi, liik, puur) VALUES ('$loomanimi', '$pilt', '$puurinr')";
 			$result = mysqli_query($connection, $query) or die("midagi läks valesti");;
 		
 			//Kas looma lisamine õnnestus või mitte, saab teada kui kontrollida mis väärtuse tagastab mysqli_insert_id funktsioon. Kui väärtus on nullist suurem, suunata kasutaja loomade vaatessse 
@@ -145,5 +146,4 @@ function upload($name){
 		return "";
 	}
 }
-
 ?>
