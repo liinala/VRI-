@@ -1,35 +1,27 @@
-kalju kukehari
-värd-kukehari
-roomav-kukehari
-sieboldi-kukehari
-tõmmu kukehari
-
-
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8"/>
 	<style>
 
-	.male {
-		background: skyblue;
+	.roomav {
+		background: green;
 	}
-	.female {
-		background: pink;
+	.püstine {
+		background: brown;
 	}
 	</style>
 </head>
 <body>
-<form method="POST" action="?add"><table border="1"><caption>Siin on 7 kassi
-</caption><tr><th>id</th><th>age</th><th>name</th><th>owner_id</th><th>gender</th>
-<th>color</th></tr><tr class="male"><td>1</td><td>6.00</td><td>Maximilian Edward Pontiff III</td>
-<td>4</td><td>M</td><td>purple</td></tr><tr class="female"><td>2</td><td>8.00</td><td>kassi nimi</td>
-<td>3</td><td></td><td>blue</td></tr><tr class="female"><td>3</td><td>5.00</td><td>kassi nimi</td>
-<td>2</td><td>F</td><td>black</td></tr><tr class="female"><td>4</td><td>88.00</td><td>234</td>
-<td>1</td><td>F</td><td>red</td></tr><tr class="male"><td>5</td><td>3.00</td><td>kass</td><td>0</td>
-<td>M</td><td>lilla</td></tr><tr class="male"><td>6</td><td>4.00</td><td>muki</td><td>5</td><td>M</td>
-<td>green</td></tr><tr class="female"><td>7</td><td>5.00</td><td>ggg</td><td>4</td><td></td><td>hall</td>
+<form method="POST" action="?add"><table border="1"><caption>Nimekiri 7. kukeharjaga
+</caption><tr><th>id</th><th> keskmine kasvukõrgus (cm)</th><th>sordinimi</th><th>päritoluriik</th><th>tüüp (R-roomav/P-püstine)</th>
+	<th>lehevärvus</th></tr><tr class=roomav>
+<td>1</td><td>45</td><td>Dart's Red</td><td>4</td><td>R</td><td>tumepunane</td></tr><tr class=püstine>
+<td>2</td><td>50</td><td>Autumn Joy</td>
+<td>3</td><td>P</td><td>blue</td></tr><tr class=püstine><td>3</td><td>30</td><td>Matrona</td><td>2</td><td>P</td><td>black</td></tr><tr class=püstine><td>4</td><td>60</td><td>Lidakenze</td><td>1</td><td>P</td><td>punane</td></tr><tr class=roomav><td>5</td><td>45</td><td>Fuldaglut</td><td>1</td>
+<td>R</td><td>lilla</td></tr><tr class=roomav><td>6</td><td>70</td><td>Variegatum</td><td>5</td><td>R</td>
+<td>green</td></tr><tr class=püstine><td>7</td><td>5</td><td>Tricolor</td><td>4</td><td></td><td>hall</td>
 </tr><tr><td><input type="submit" value="Sisesta" /></td><td><input type="text" name="age" maxlength="4" size="4"/></td><td><input type="text" name="name" />
 </td>
 <td><input type="text" name="owner_id" maxlength="4" size="4"/></td><td><input type="text" name="gender" maxlength="4" size="4"/></td>
-<td><input type="text" name="color" /></td></tr></table></form>
+<td><input type="text" name="lehevärvus" /></td></tr></table></form>
 </body>

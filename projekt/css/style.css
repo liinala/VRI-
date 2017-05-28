@@ -1,6 +1,7 @@
 body{
 	background: url(sedum.jpg) no-repeat center, center fixed;
 	background-color: #E5FFCC;
+	background-size: cover;
 	
 }
 header{
