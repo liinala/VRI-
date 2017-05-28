@@ -1,0 +1,11 @@
+body{
+	background: url(sedum.jpg) no-repeat center, center fixed;
+	background-color: #E5FFCC;
+	
+}
+header{
+	margin: auto;
+	padding: 10px, 30px;
+	color: green;
+	text-align:center;
+}	
