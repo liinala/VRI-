@@ -1,0 +1,18 @@
+sisselogimine: 
+graafiline liides - phpMyAdmin aadressil http://enos.itcollege.ee/phpmyadmin/
+Sisse saab kasutajanimega test ja parooliga t3st3r123.
+
+
+Tabeli loomine:
+CREATE TABLE sedum_llaumets (id integer PRIMARY KEY auto_increment, kasvukorgus integer,
+sordinimi varchar(50), aiand integer, kasvuviis varchar(10), varvus varchar(30))
+
+Tabelisse andmete sisetamine:
+INSERT INTO sedum_llaumets (kasvukorgus, sordinimi, aiand, kasvuviis, varvus) VALUES
+(15, 'Dart Red', 4, 'R', 'tumepunane'),
+(50, 'Autumn Joy', 3, 'P', 'hallikasroheline'),
+(30, 'Matrona', 2, 'P', 'tumeroheline'),
+(60, 'Lidakenze', 1, 'P', 'punane'),
+(15, 'Fuldaglut', 1, 'R', 'tumelillakas'),
+(10, 'Variegatum', 5, 'R', 'roheline'),
+(5, 'Tricolor', 4, 'R', 'hall');

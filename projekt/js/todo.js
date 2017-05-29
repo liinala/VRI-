@@ -1,7 +1,7 @@
 var TodoList = {
 	tasks: [
-		{name:'test1', isDone: false},
-		{name:'test3', isDone: true}
+		{name:'Harvenda roomavat kukeharja', isDone: false},
+		{name:'Istuta ostetud kukeharjad ', isDone: true}
 	],
 	listElement:null,
 	init: function(){
