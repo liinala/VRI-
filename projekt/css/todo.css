@@ -1,0 +1,12 @@
+.hidden {
+	display: none !important;
+}
+ ul li div.name {
+	 display: inline-block;
+ }
+ ul li div.name.done {
+	 text-decoration: line-through;
+ }
+ ul li {
+	 padding-top:10px;
+ }
