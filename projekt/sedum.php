@@ -58,6 +58,7 @@ $error = null;
 ?> 
 
 <!DOCTYPE html>
+<html>
 <head>
 	<meta charset="utf-8"/>
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -113,3 +114,4 @@ $error = null;
 2-Hortes, 3-Aiasõber, 4-Plantex, 5-Klsostrimetsa; Kasvuviiside valikus on R-roomava ja P-püstine kasv; Lehevärvus - kirjeldada võimalikult lühidalt, aga täpselt.
 NB! Taimed kuvatakse tabelis sordinime järgi tähestiku järjekooras </p>
 </body>
+</html>
