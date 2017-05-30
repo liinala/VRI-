@@ -60,24 +60,13 @@ $error = null;
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8"/>
-	<style>
-
-	.roomav {
-		background: green;
-	}
-	.püstine {
-		background: brown;
-	}
-	.error {
-		color: red;
-	}
-	</style>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <nav>
 		<ul>
 			<a href="index.html">Home</a>
-			<a href="nimekiri.html">Soovide nimekiri</a>
+			<a href="sedum.php">Soovide nimekiri</a>
 			<a href="gallery.html">Galerii</a>
 			<a href="videod.html">Videod</a>
 			<a href="viktoriin.html">Viktoriin</a>
@@ -91,7 +80,7 @@ $error = null;
 
 <form method="POST" action="">
 	<table border="1">
-		<caption>Nimekiri 7. kukeharjaga</caption>
+		<caption><strong>Nimekiri kukeharjadest, mida soovitakse osta: </strong></caption></br></br>
 		<tr>
 			<th>id</th>
 			<th>keskmine kasvukõrgus (cm)</th>
@@ -119,4 +108,8 @@ $error = null;
 		</tr>
 	</table>
 </form>
+<h2>Juhend</h2>
+<p> Kasvukõrgus: sisesta keskmine kasvukõrgus (mitte vahemik); Sordinimi on soovitav sisestada suure algustähega; Aiandite valik: 1-Hansaplant, 
+2-Hortes, 3-Aiasõber, 4-Plantex, 5-Klsostrimetsa; Kasvuviiside valikus on R-roomava ja P-püstine kasv; Lehevärvus - kirjeldada võimalikult lühidalt, aga täpselt.
+NB! Taimed kuvatakse tabelis sordinime järgi tähestiku järjekooras </p>
 </body>
