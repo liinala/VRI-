@@ -1,0 +1,13 @@
+Võrgurakendused I eksam (Liina Laumets)
+
+Kõikide vahendite (välja arvatud sõbrad ja tuttavad) kasutamine on lubatud.
+
+Ülesande juures on kõige olulisem funktsionaalsus tööle saada. Kui jääb aega, siis võid ka ilusamaks teha, kuid see ei ole nii oluline.
+
+Sinu ülesanne
+
+Loo lihtne valuuta kalkulaator. Piisab EUR?USD ja USD?EUR võimalusest. Kurss võib olla fikseeritud.
+
+Tulemuse esitamine
+
+Tulemuse kood peab olema versioonihalduses ning töötav lahendus kuskil avalikult ligipääsetavas serveris (näiteks enoses).
