@@ -23,3 +23,8 @@ Tabeli muutmine:
 
 Suurendada kõiki tabelis olevaid vanuseid 1 aasta võrra
 UPDATE loomaaed_llaumets SET vanus=vanus+1;
+
+http://naistekas.delfi.ee/persoon/lugejakiri/naine-on-onnetu-minust-on-saanud-nahtamatu-naine-keda-mehed-enam-tahele-ei-pane-ja-ma-olen-alles-35?id=78308792
+http://arvamus.postimees.ee/4120715/kaire-uusen-eestlane-on-kohviveski-mitte-metsamees
+
+https://www.romper.com/p/7-beginner-zumba-mistakes-all-first-timers-make-how-to-fix-them-59562
